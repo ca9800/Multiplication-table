@@ -28,10 +28,9 @@ height = int(input("Height of multiplication table: "))
 
 x = 'X'
         
-grid = [ x for i in range(width) ]
+grid_width = [ x for i in range(width) ]
+grid_height = [ x for i in range(height) ]
 
-for i, line in enumerate(grid):
-    print (grid)
- 
-        
-        
+for i, line in enumerate(grid_width, grid_height):    
+    print (grid_width)
+    print (grid_height)
