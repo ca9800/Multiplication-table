@@ -25,12 +25,7 @@ Height of multiplication table: 8
 width = int(input("Width of multiplication table: "))
 height = int(input("Height of multiplication table: "))
 
+print()
 
-x = 'X'
-        
-grid_width = [ x for i in range(width) ]
-grid_height = [ x for i in range(height) ]
-
-for i, line in enumerate(grid_width, grid_height):    
-    print (grid_width)
-    print (grid_height)
+for row in range(height):
+    print(*("{:3}".format(row*col) for col in range(width)))
